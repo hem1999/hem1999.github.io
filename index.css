@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    color:whitesmoke;
+    text-align: center; /* Centers text horizontally */
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color:#fff;
+    padding: 10px 20px;
+    height: 36px;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar-right a{
+    color:#fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-right a:hover{
+    text-decoration: underline;
+}
+
+
+
+#role {
+    color:#00FFFF; 
+    letter-spacing: 5px;
+}
+
+
