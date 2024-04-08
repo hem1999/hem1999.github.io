@@ -1,9 +1,9 @@
-body{
+/* body{
     background-color: black;
     color:whitesmoke;
-    text-align: center; /* Centers text horizontally */
-    margin: 0; /* Removes default body margin */
-    padding: 0; /* Removes default body padding */
+    text-align: center; 
+    margin: 0; 
+    padding: 0;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -15,8 +15,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color:#fff;
+    background-color: #2C2C2C;
+    color:whitesmoke;
     padding: 10px 20px;
     height: 36px;
 }
@@ -34,7 +34,7 @@ body{
 }
 
 .navbar-right a{
-    color:#fff;
+    color:whitesmoke;
     text-decoration: none;
     margin-left: 20px;
 }
@@ -50,4 +50,4 @@ body{
     letter-spacing: 5px;
 }
 
-
+ */

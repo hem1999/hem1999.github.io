@@ -39,3 +39,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initially start the typing effect
     typeRole();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const words = document.querySelectorAll('.word');
+
+    words.forEach((word, index) => {
+        setTimeout(() => {
+            word.classList.remove('animate-popOut');
+            void word.offsetWidth; // Trigger reflow to restart animation
+            word.classList.add('animate-popOut');
+        }, index * 500); // Adjust the delay time as needed
+    });
+});

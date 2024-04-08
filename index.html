@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="index.js"></script>
 </head>
-<body>
+
+<body class="bg-black text-white">
     <div class="header">
-        <nav class="navbar">
-            <div class="navbar-left">
+        <nav class="navbar bg-gray-900 text-whitesmoke px-4 py-2 flex justify-between items-center">
+            <div class="navbar-left flex items-center">
                 <div class="profile">
-                    <img src="./profile-pic.jpg" alt="Profile Picture">
+                    <img src="./profile-pic.jpg" alt="Profile Picture" class="w-10 h-10 rounded-full mr-2">
                 </div>
                 <div class="name">Hemanth</div>
             </div>
-            <div class="navbar-right">
-                <a href="http://">GitHub</a>
-                <a href="http://">Linkedin</a>
+            <div class="navbar-right flex space-x-4">
+                <a href="https://github.com/hem1999" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/hemanth2000/" target="_blank">Linkedin</a>
                 <a href="#contact">Contact</a>
                 <a href="#projects">Projects</a>
                 <a href="blog.html">Blog</a>
@@ -26,15 +29,47 @@
         </nav>
     </div>
     <div class="everything">
-        <div id="title">
-            <h1>This is about <span id="role"></span></h1>
+        <div id="title" class="flex justify-center mt-10 mb-2">
+            <h1 class="text-4xl">This is about <span id="role" class="text-cyan-500"></span></h1>
         </div>
-        <div class="resume-download">
-            <p>Click here to download the resume!</p>
+        <div class="skill-intro parent flex">
+            <div class="child intro mx-2 mb-2 w-3/4 bg-gray-900 rounded px-4 py-4">
+
+                <!-- Add your small introduction content here -->
+                Hemanth is currently studying Masters in Computer Science with Machine Learning Specialization in George
+                Mason University.
+                He started masters in Jan 2023, before that he has worked for 2 years
+                as an Azure & AWS Cloud Engineer for almost 2 years at Bosch in Hyderabad, India.
+                Where he lead a team of 4 who provides dynamic infrastructure and support for almost 8 clients during his
+                time.
+            </div>
+            <div class="child courses w-1/4 bg-gray-900 mx-1">
+                <h1 class="text-3xl px-1 flex justify-center">Skills</h1>
+                <div class="flex flex-wrap">
+                    <div class="skill-brick bg-gray-500 text-white">Python</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 mx-0 rounded">Java</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 rounded">PySpark</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 rounded">SpringBoot</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 mx-1 rounded">Python</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 mx-0 rounded">Java</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 rounded">PySpark</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 rounded">SpringBoot</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 mx-1 rounded">Python</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 mx-0 rounded">Java</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 rounded">PySpark</div>
+                    <div class="skill-brick bg-gray-500 text-white p-1 rounded">SpringBoot</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="resume-download mx-2 mt-4">
+            <a href="https://drive.google.com/file/d/1I-Sr6gjUwqHgn8gbR-ThAFxm3QAfNUxg/view?usp=sharing" target="_blank"
+                class="bg-blue-500 hover:bg-gray-900 text-whitesmoke font-bold py-2 px-4 rounded">View Resume</a>
         </div>
     </div>
     <div class="footer">
-
+        <!-- Add your footer content here -->
     </div>
 </body>
+
 </html>
